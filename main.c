@@ -3,7 +3,6 @@
 #include<math.h>
 #include <stdlib.h>
 
-
 char reVal(int num)
 {
     if (num >= 0 && num <= 9) // Verification par code ASCII
@@ -19,6 +18,7 @@ int val(char c)
     else
         return (int)c - 'A' + 10; 
 }
+
 // Fonction pour convertir un nombre d'une base au décimale
 int aDeci(char *str, int base1)
 {
@@ -43,6 +43,7 @@ int aDeci(char *str, int base1)
 
     return num;
 }
+
 // Fonction pour inverser une chaine de char
 void strev(char *str)
 {
@@ -82,7 +83,6 @@ char* deDeci(char res[], int base1,int base2, char *inputNum)
     
     return res;
 }
-
 
 // Program main
 int main()
