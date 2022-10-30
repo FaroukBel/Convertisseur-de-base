@@ -18,6 +18,7 @@ int val(char c)
     else
         return (int)c - 'A' + 10;
 }
+
 // Fonction pour convertir un nombre d'une base au décimale
 int aDeci(char *str, int base1)
 {
@@ -35,6 +36,7 @@ int aDeci(char *str, int base1)
 
     return num;
 }
+
 // Fonction pour inverser une chaine de char
 void strev(char *str)
 {
@@ -82,8 +84,7 @@ int main()
     int base1, base2;
     char res[1000]; // Initiation du resultat de conversion du decimale au bases
     int len = strlen(nbr);
-  
-    
+
     // Saisie
 
     printf("Donner le nombre: ");
@@ -105,6 +106,7 @@ int main()
 
     printf("Donner la base desire: ");
     scanf("%d", &base2);
+    
     // Resultat
     printf("L equivalent de %s en base %d est "
            " %s\n",
